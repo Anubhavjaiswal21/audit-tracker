@@ -50,7 +50,7 @@ export default function ObservationDetails() {
       </div>
 
       {observation.file && (
-        <div className="mt-4">
+        <div className="mt-5">
           <p className="font-semibold">Attached File:</p>
           {observation.file.startsWith("data:application/pdf") ? (
             <a href={observation.file} target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">
