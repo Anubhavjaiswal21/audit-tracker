@@ -29,7 +29,7 @@ export default function ObservationList() {
     );
   });
 
-  // ✅ Chart Data
+  //  Chart Data
   const statusCounts = ["Open", "In Progress", "Closed"].map((status) => ({
     status,
     count: observations.filter((obs) => obs.status === status).length,
@@ -47,7 +47,7 @@ export default function ObservationList() {
         </Link>
       </div>
 
-      {/* ✅ Bar Chart */}
+      {/*  Bar Chart */}
       <div className="bg-white p-4 mb-6 rounded shadow">
         <h3 className="text-lg font-semibold mb-2">Status Overview</h3>
         <ResponsiveContainer width="100%" height={250}>
@@ -61,7 +61,7 @@ export default function ObservationList() {
         </ResponsiveContainer>
       </div>
 
-      {/* ✅ Filters */}
+      {/* Filters */}
       <div className="flex gap-4 mb-4">
         <select
           value={filterStatus}
@@ -86,7 +86,7 @@ export default function ObservationList() {
         </select>
       </div>
 
-      {/* ✅ Table */}
+      {/* Table */}
       <div className="overflow-x-auto">
         <table className="w-full bg-white rounded shadow">
           <thead>
